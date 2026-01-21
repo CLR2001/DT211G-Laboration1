@@ -7,12 +7,12 @@
 }
 
 .main-content-bilder p{
-  max-width: min(80%, 65ch);
+  max-width: 65ch;
 }
 
 .images-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   place-items: center;
   width: 100%;
@@ -40,6 +40,12 @@
     &:nth-child(even){
       justify-self: start;
     }
+  }
+}
+
+@media (min-width: 500px) {
+  .images-container{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
 
