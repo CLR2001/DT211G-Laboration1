@@ -1,4 +1,4 @@
-# ◈ Projektnamn
+# ◈ Laboration 1 - DT211G
 
 En kort och kärnfull beskrivning av projektet här. (T.ex. "Denna applikation är en väderstation som visualiserar realtidsdata från öppna API:er med fokus på prestanda och användarupplevelse.")
 
@@ -16,7 +16,7 @@ Arkitekturen är byggd för att vara modulär och lätt att underhålla, med en 
 
 1. **Klona projektet:**
    ```bash
-   git clone https://github.com/CLR2001/[ditt-reponamn].git
+   git clone https://github.com/CLR2001/DT211G-Laboration1.git
    ```
 2. **Installera beroenden:**
    ```bash
@@ -26,9 +26,14 @@ Arkitekturen är byggd för att vara modulär och lätt att underhålla, med en 
    ```bash
    npm run dev
    ```
+   Eller
+   ```bash
+   npm run build
+   npm run preview
+   ```
 
 ## ⬀ Länk till webbplats
-[Webbplats](https://dinwebbplats.se)
+[Webbplats]()
 
 ## ⬢ Utvecklare
 **Ludvig Rosenqvist** — *Student*
