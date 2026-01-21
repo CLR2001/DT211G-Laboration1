@@ -1,22 +1,20 @@
-# ◈ Projektnamn
-
-En kort och kärnfull beskrivning av projektet här. (T.ex. "Denna applikation är en väderstation som visualiserar realtidsdata från öppna API:er med fokus på prestanda och användarupplevelse.")
+# ◈ Laboration 1
+Laboration med fokus på automatisering & publicering.
 
 ## ✦ Projektbeskrivning
-Detta repository innehåller källkoden för [Namn på projektet]. Projektets huvudsyfte är att [förklara målet, t.ex. lösa problemet med bildhantering på webben]. 
-
-Arkitekturen är byggd för att vara modulär och lätt att underhålla, med en automatiserad pipeline för att optimera assets och säkerställa snabba laddtider.
+Denna laboration syftar till att automatisera större delar av arbetet inom webbutveckling. Genom att implementera automatisering sparar man både tid och undviker mänskliga fel som kan uppkomma när man hanterar större projekt med flertalet filer.
 
 ## ⚙ Funktioner
-* **Asset-optimering:** Automatisk hantering av bildformat (AVIF/WebP) för minimal filstorlek.
-* **Modern CSS-struktur:** Använder SCSS för skalbar och läsbar styling.
-* **Prestandafokus:** Minimal bundle-storlek genom effektiv trädskakning (tree-shaking) i Vite.
+* **Vite:** Webbplatsen är uppbyggd med Vite för automatisk minifiering och konkatenering.
+* **Sass:** Använder Sass för modern och intuitiv CSS-kodning.
+* **Bildgenerering & Komprimering:** Automatisk generering av olika format samt storlekar och komprimering av bilder med hjälp av [Vite Image Optimizer](https://www.npmjs.com/package/vite-plugin-image-optimizer) och [Vite Imagetools](https://www.npmjs.com/package/vite-imagetools).
+* **Git & GitHub:** Versionshanteringsverktyg för lokala och publicerade repon. Används för att utveckla och testa webbplatsen på olika branches för att inte publicera ofärdiga ändringar.
 
 ## ⌨ Installation & Setup
 
 1. **Klona projektet:**
    ```bash
-   git clone https://github.com/CLR2001/[ditt-reponamn].git
+   git clone https://github.com/CLR2001/DT211G-Laboration1.git
    ```
 2. **Installera beroenden:**
    ```bash
@@ -26,9 +24,14 @@ Arkitekturen är byggd för att vara modulär och lätt att underhålla, med en 
    ```bash
    npm run dev
    ```
+   Eller
+   ```bash
+   npm run build
+   npm run preview
+   ```
 
 ## ⬀ Länk till webbplats
-[Webbplats](https://dinwebbplats.se)
+[Webbplats]()
 
 ## ⬢ Utvecklare
 **Ludvig Rosenqvist** — *Student*
