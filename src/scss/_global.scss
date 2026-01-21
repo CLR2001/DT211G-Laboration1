@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6{
   color: variables.$light-text;
 }
 
-p, li {
+:is(div, section):has(> :is(p, ul, ol)) {
   max-width: clamp(40ch, 80%, 60ch);
 }
 

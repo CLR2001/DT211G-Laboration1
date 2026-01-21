@@ -2,7 +2,12 @@
   display: grid;
   gap: 2rem;
   place-items: center;
+  max-width: none;
   margin: 4rem 0;
+}
+
+.main-content-bilder p{
+  max-width: min(80%, 65ch);
 }
 
 .images-container{
