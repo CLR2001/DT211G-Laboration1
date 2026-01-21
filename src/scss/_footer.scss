@@ -1,0 +1,30 @@
+@use 'variables';
+
+footer{
+  padding: 2rem 0;
+  color: variables.$light-text;
+  background-color: #222222;
+}
+
+footer ul{
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 992px){
+  footer ul{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 0;
+  }
+
+  footer ul li:first-child{
+    justify-self: start;
+  }
+
+  footer ul li:last-child{
+    justify-self: end;
+  }
+}

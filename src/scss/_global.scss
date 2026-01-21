@@ -1,3 +1,4 @@
+@use "sass:color";
 @use 'variables';
 
 :root {
@@ -9,12 +10,12 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  color: variables.$dark-text-muted;
-  background-color: variables.$light-background;
+  color: variables.$light-text-muted;
+  background-color: color.mix(#fff, variables.$dark-background, 9%);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: variables.$dark-text;
+h1, h2, h3, h4, h5, h6{
+  color: variables.$light-text;
 }
 
 p, li {

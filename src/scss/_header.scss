@@ -1,0 +1,42 @@
+@use 'variables';
+
+header{
+  padding: 1rem 0;
+  background-color: #222222;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+}
+
+.nav-list{
+  color: variables.$light-text;
+  background-color: #222222;
+}
+
+.nav-list a{
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  &:hover{
+    background-color: #333333;
+  }
+  &:active{
+    filter: opacity(0.6);
+  }
+  &.active-page{
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0.5rem;
+      left: 10%;
+      width: 80%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: variables.$light-text;
+    }
+  }
+}
+
+.hamburger-line{
+  background-color: variables.$light-text;
+}
