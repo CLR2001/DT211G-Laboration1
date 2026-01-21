@@ -1,0 +1,100 @@
+@use 'variables';
+
+nav{
+  display: grid;
+}
+
+.nav-list{
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateX(100%);
+}
+
+nav[data-open="true"] .nav-list{
+  visibility: visible;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  z-index: 9998;
+}
+
+.hamburger-button{
+  all: unset;
+  position: relative;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.hamburger-button:focus-visible{
+  outline: 2px solid black;
+  outline-offset: 5px;
+}
+
+.hamburger-line{
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #222222;
+  
+}
+
+nav[data-open="true"] .hamburger-line1{
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+nav[data-open="true"] .hamburger-line2{
+  display: none;
+}
+
+nav[data-open="true"] .hamburger-line3{
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+nav[data-open="true"] .hamburger-button{
+  justify-content: center;
+}
+
+body:has(nav[data-open="true"]){
+  overflow: hidden;
+  padding-right: variables.$scrollbar-width;
+}
+
+@media (min-width: 992px){
+  .nav-list{
+    position: static;
+    visibility: visible;
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    transform: translateX(0);
+    transition: none;
+  }
+
+  .nav-list li:first-child{
+    justify-self: start;
+  }
+
+  .nav-list li:last-child{
+    justify-self: end;
+  }
+  
+  .hamburger-button{
+    display: none;
+  }
+}

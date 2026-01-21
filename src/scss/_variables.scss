@@ -1,0 +1,10 @@
+$primary-color: #000000;
+$dark-text: #212529;
+$dark-text-muted: #333333;
+$dark-background: #121212;
+$light-text: #F8F9FA;
+$light-text-muted: #E9ECEF;
+$light-background: #FAFAFA;
+$standard-padding: clamp(1rem, 5vw, 3rem);
+$global-font-clamp: clamp(1rem, 0.1vw + 1rem, 1.125rem);
+$scrollbar-width: var(--scrollbar-width);

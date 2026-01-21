@@ -1,0 +1,33 @@
+@use 'variables';
+
+:root {
+  font-size: variables.$global-font-clamp;
+}
+
+body {
+  overflow-x: clip;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: variables.$dark-text-muted;
+  background-color: variables.$light-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: variables.$dark-text;
+}
+
+p, li {
+  max-width: clamp(40ch, 80%, 60ch);
+}
+
+a {
+  color: inherit;
+}
+
+input, button, textarea, select {
+  &:focus-visible{
+    outline: 2px solid variables.$primary-color;
+    outline-offset: 2px;
+  }
+}
