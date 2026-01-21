@@ -1,0 +1,45 @@
+.main-content-bilder{
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  margin: 4rem 0;
+}
+
+.images-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  place-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.images-container picture{
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+}
+
+.images-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (797px <= width <= 1187px){
+  .images-container picture{
+    &:nth-child(odd){
+      justify-self: end;
+    }
+    &:nth-child(even){
+      justify-self: start;
+    }
+  }
+}
+
+@media (min-width: 1188px) {
+  .images-container picture{
+    max-width: none;
+  }
+}
