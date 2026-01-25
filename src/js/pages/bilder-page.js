@@ -15,7 +15,7 @@ export const bilderPage = `
     <div class="images-container">
       ${getOptimizedImage(raccoonUrl, {alt: "Tvättbjörn som går på gräs", layout: "grid", lazy: false, priority: true})}
       ${getOptimizedImage(birdUrl, {alt: "Färglad fågel sitter på en gren", layout: "grid", lazy: false, priority: true})}
-      ${getOptimizedImage(polarUrl, {alt: "Isbjörn sitter med ena tassen upp", layout: "grid", lazy: false, priority: true})}
+      ${getOptimizedImage(polarUrl, {alt: "Isbjörn sitter med ena tassen upp", layout: "grid"})}
       ${getOptimizedImage(foxUrl, {alt: "Räv i ett snöigt landskap", layout: "grid"})}
       ${getOptimizedImage(sheepUrl, {alt: "Får som tiitar i i kameran", layout: "grid"})}
       ${getOptimizedImage(koalaUrl, {alt: "Koala som sover i ett träd", layout: "grid"})}
