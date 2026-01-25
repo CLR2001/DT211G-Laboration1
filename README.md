@@ -31,7 +31,7 @@ Denna laboration syftar till att automatisera större delar av arbetet inom webb
    ```
 
 ## ⬀ Länk till webbplats
-[Webbplats]()
+[Webbplats](https://clr-dt211g-laboration1.netlify.app/)
 
 ## ⬢ Utvecklare
 **Ludvig Rosenqvist** — *Student*
