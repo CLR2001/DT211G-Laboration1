@@ -1,0 +1,37 @@
+.main-content-process{
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.main-content-process section{
+  max-width: 65ch;
+}
+
+.main-content-process b{
+  display: inline-block;
+  margin-bottom: 0.25ch;
+  font-size: 1.15rem;
+}
+
+.main-content-process p{
+  margin-top: 1rem;
+}
+
+.main-content-process li p{
+  margin-top: 1ch;
+}
+
+.main-content-process ul{
+  padding-left: 2rem;
+  list-style-type: disc;
+}
+
+.main-content-process li{
+  margin-top: 1rem;
+}
+
+.main-content-process a{
+  text-decoration: underline;
+}

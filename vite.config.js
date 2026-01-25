@@ -17,12 +17,6 @@ export default defineConfig({
         quality: 70,
         palette: true,
       },
-      svg: {
-        plugins: [
-          { name: 'removeViewBox', active: false },
-          { name: 'sortAttrs', active: true }
-        ],
-      },
       cache: true,
       cacheLocation: './node_modules/.cache/vite-plugin-image-optimizer',
     }),

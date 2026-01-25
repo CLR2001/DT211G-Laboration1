@@ -1,0 +1,34 @@
+@use 'variables';
+
+.main-content-not-found {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  margin-top: 4rem;
+}
+
+.main-content-not-found section {
+  text-align: center;
+}
+
+.main-content-not-found h1 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 5rem;
+}
+
+.main-content-not-found a {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: variables.$primary-color;
+  border-radius: 1rem;
+  &:hover{
+    filter: brightness(0.5);
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+}

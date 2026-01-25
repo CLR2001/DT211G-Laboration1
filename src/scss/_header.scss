@@ -1,7 +1,7 @@
 @use 'variables';
 
 header{
-  padding: 1rem 0;
+  padding: variables.$standard-padding 0;
   background-color: #222222;
   font-size: 1.25rem;
   font-weight: 600;
