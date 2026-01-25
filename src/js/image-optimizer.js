@@ -13,13 +13,15 @@
  * @param {string} options.alt - Alt text for image.
  * @param {'full'|'main'|'half'|'third'|'custom'} options.layout - Layout type (default: 'main').
  * @param {boolean} options.lazy - Enable lazy loading (default: true).
+ * @param {boolean} options.priority - Enable fetchpriority (default: false).
  */
-export function getOptimizedImage(imageMetadata, { alt = "", layout = "main", lazy = true, maxWidth = 1400} = {}) {
+export function getOptimizedImage(imageMetadata, { alt = "", layout = "main", lazy = true, priority = false, maxWidth = 1400} = {}) {
   // 1. Control to catch wrong inputs
   if (!Array.isArray(imageMetadata)) {
     console.error("getOptimizedImage: image was imported without metadata (use &as=metadata)");
     return `<img src="" alt="${alt}">`;
   }
+  if(priority && lazy) {priority = false}
 
   // 1. Different layout configs
   const sizeAlternatives = {
@@ -64,7 +66,10 @@ export function getOptimizedImage(imageMetadata, { alt = "", layout = "main", la
         alt="${alt}"
         sizes="${selectedSizeAlternative}"
         loading="${lazy ? 'lazy' : 'eager'}"
+        ${priority ? 'fetchpriority="high"' : ''}
         decoding="async"
+        width="${fallbackObject.width}"
+        height="${fallbackObject.height}"
       >
     </picture>
   `;
